@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Management System - Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .login-container:hover {
+            transform: scale(1.05);
+        }
+
+        .login-container h2 {
+            color: #56ab2f;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 100px; /* Adjust the size as needed */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #56ab2f;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .form-group input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .form-group button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 14px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #56ab2f;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .form-group select:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="Log in.jpg" alt="Logo" class="logo">
+        <h2>E-Waste Management System</h2>
+        <form class="login-form" action="your_login_action_endpoint.php" method="post">
+            <div class="form-group">
+                <label for="login-type">Login As:</label>
+                <select id="login-type" name="login-type" required>
+                    <option value="consumer">Consumer</option>
+                    <option value="vendor">Vendor</option>
+                    <option value="company">Company</option>
+                    <option value="government">Government</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
